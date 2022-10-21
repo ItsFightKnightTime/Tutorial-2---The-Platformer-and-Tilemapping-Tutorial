@@ -52,6 +52,9 @@ public class PlayerScript : MonoBehaviour
         {
             WinTextObject.SetActive(true);
             Destroy(gameObject);
+
+            // Calls sound script and plays win sound
+            SoundMangerScript.PlaySound("FFWin");
         }
 
         // Lives reset and Teleport to next level - (BUGGED RIGHT NOW) - Has to do with OnCollisionEnter2D function and SetCountText(); maybe??
@@ -122,7 +125,7 @@ public class PlayerScript : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                rd2d.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse); //the 3 in this line of code is the player's "jumpforce," and you change that number to get different jump behaviors.  You can also create a public variable for it and then edit it in the inspector.
+                rd2d.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse);
             }
         }
     }
