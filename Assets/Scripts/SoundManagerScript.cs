@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundMangerScript : MonoBehaviour
+public class SoundManagerScript : MonoBehaviour
 {
     public static AudioClip winSound;
     static AudioSource audioSrc;

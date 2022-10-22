@@ -54,7 +54,7 @@ public class PlayerScript : MonoBehaviour
             Destroy(gameObject);
 
             // Calls sound script and plays win sound
-            SoundMangerScript.PlaySound("FFWin");
+            SoundManagerScript.PlaySound("FFWin");
         }
 
         // Lives reset and Teleport to next level - (BUGGED RIGHT NOW) - Has to do with OnCollisionEnter2D function and SetCountText(); maybe??
